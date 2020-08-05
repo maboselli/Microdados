@@ -1,0 +1,5 @@
+agregate_gh.py
+data=$(date +"%m-%d-%Y %T")
+git add .
+git commit -m "update ${data}"
+GIT_SSH_COMMAND='ssh -i ~/.ssh/git_id_rsa -o IdentitiesOnly=yes' git push -f origin master
