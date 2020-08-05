@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Autor: Marco A. Boselli, Universidade federal de Uberlândia.
+# Autor: Marco A. Boselli, Universidade Federal de Uberlândia.
 
 import pandas as pd
 import numpy as np

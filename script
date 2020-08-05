@@ -1,4 +1,4 @@
-agregate_gh.py
+/home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py
 data=$(date +"%m-%d-%Y %T")
 git add .
 git commit -m "update ${data}"
