@@ -1,1 +1,1 @@
-/bin/sh: ./script: Permission denied
+./script: line 1: agregate_gh.py: command not found
