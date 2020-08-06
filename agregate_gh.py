@@ -63,7 +63,7 @@ col4 = 'Obitos-' + str(data_2)
 nome = f'Microdados_analisados_MS_proc_{today_date_str}.csv'
 
 df_final = pd.DataFrame({col1:casos_data1, col2: obitos_data1, col3:casos_data2, col4: obitos_data2})
-df_final.to_csv(nome)
+df_final.to_csv(nome, index=False)
 
 print(f'Dados salvos no arquivo: {nome}')
 print('Fim do processo')
