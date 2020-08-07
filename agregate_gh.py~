@@ -28,9 +28,9 @@ print(f'Data: {today_date_str}')
       
 cols_list = ['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA', 'STATUS', 'DATA DO ÓBITO']
 #remote 
-df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
+#df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
 #local
-#df = pd.read_csv('Microdados-2020.08.04.csv', sep = ';', usecols=cols_list)
+df = pd.read_csv('Microdados-2020.08.04.csv', sep = ';', usecols=cols_list)
 
 print('Lido')
 
