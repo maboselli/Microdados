@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Autor: Marco A. Boselli, Universidade Federal de Uberlândia.
+# Autor: Marco A. Boselli, Universidade federal de Uberlândia.
 
 import pandas as pd
 import numpy as np
@@ -27,7 +27,10 @@ print(f'Dados coletados em: {csv_url}')
 print(f'Data: {today_date_str}')
       
 cols_list = ['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA', 'STATUS', 'DATA DO ÓBITO']
-df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
+#remote 
+#df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
+#local
+df = pd.read_csv('Microdados-2020.08.04.csv', sep = ';', usecols=cols_list)
 
 print('Lido')
 
@@ -39,12 +42,13 @@ df['DATA DO ÓBITO'] = df['DATA DO ÓBITO'].dt.tz_convert(None)
 #
 df['DATA AJUSTADA'] = pd.to_datetime(df['DATA AJUSTADA'])
 
-#df.to_csv('Micordados_hoje.csv')
+df.to_csv('Micordados_hoje.csv')
   
 def get_casos(data, df):
     df_interno = df.set_index(['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA']).sort_index()
     df_data = df_interno.iloc[df_interno.index.get_level_values('DATA AJUSTADA') <= data]
-    casos = df_data.reset_index().groupby('MUNICÍPIO RESIDÊNCIA AJUSTADO')['STATUS'].count()    
+    df_data = df_data.loc[df_data['STATUS'] == 'CONFIRMADO']
+    casos = df_data.reset_index().groupby('MUNICÍPIO RESIDÊNCIA AJUSTADO')['STATUS'].count()  
     d1 = df_data.reset_index()
     d1 = d1[d1['DATA DO ÓBITO'] <= data]
     obitos = d1.groupby('MUNICÍPIO RESIDÊNCIA AJUSTADO')['DATA DO ÓBITO'].count()
@@ -63,7 +67,7 @@ col4 = 'Obitos-' + str(data_2)
 nome = f'Microdados_analisados_MS_proc_{today_date_str}.csv'
 
 df_final = pd.DataFrame({col1:casos_data1, col2: obitos_data1, col3:casos_data2, col4: obitos_data2})
-df_final.to_csv(nome, index=False)
+df_final.to_csv(nome)
 
 print(f'Dados salvos no arquivo: {nome}')
 print('Fim do processo')
