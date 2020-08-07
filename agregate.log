@@ -1,11 +1,6 @@
-Processamento: 08-06-2020 13:50:01
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/08/Microdados-2020.08.06.csv
-Data: 2020-08-06
+Processamento: 08-07-2020 13:50:01
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/08/Microdados-2020.08.07.csv
+Data: 2020-08-07
 Lido
-Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-08-06.csv
+Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-08-07.csv
 Fim do processo
-[master 4e2831f] update 08-06-2020 13:50:01
- 3 files changed, 85 insertions(+), 8 deletions(-)
- create mode 100644 Microdados_analisados_MS_proc_2020-08-06.csv
-To github.com:maboselli/Microdados.git
-   3f65c5c..4e2831f  master -> master
