@@ -42,7 +42,7 @@ df['DATA DO ÓBITO'] = df['DATA DO ÓBITO'].dt.tz_convert(None)
 #
 df['DATA AJUSTADA'] = pd.to_datetime(df['DATA AJUSTADA'])
 
-df.to_csv('Micordados_hoje.csv')
+#df.to_csv('Micordados_hoje.csv')
   
 def get_casos(data, df):
     df_interno = df.set_index(['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA']).sort_index()
