@@ -28,9 +28,11 @@ print(f'Data: {today_date_str}')
       
 cols_list = ['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA', 'STATUS', 'DATA DO ÓBITO']
 #remote 
-df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
+#df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
 #local
-#df = pd.read_csv('Microdados-2020.08.04.csv', sep = ';', usecols=cols_list)
+df = pd.read_csv('Microdados-2020.08.06.csv', sep = ';', usecols=cols_list)
+
+#df_cit.groups
 
 print('Lido')
 
@@ -42,14 +44,14 @@ df['DATA DO ÓBITO'] = df['DATA DO ÓBITO'].dt.tz_convert(None)
 #
 df['DATA AJUSTADA'] = pd.to_datetime(df['DATA AJUSTADA'])
 
-#df.to_csv('Micordados_hoje.csv')
+df.to_csv('Micordados_hoje.csv')
   
 def get_casos(data, df):
     df_interno = df.set_index(['MUNICÍPIO RESIDÊNCIA AJUSTADO', 'DATA AJUSTADA']).sort_index()
     df_data = df_interno.iloc[df_interno.index.get_level_values('DATA AJUSTADA') <= data]
     df_data = df_data.loc[df_data['STATUS'] == 'CONFIRMADO']
     casos = df_data.reset_index().groupby('MUNICÍPIO RESIDÊNCIA AJUSTADO')['STATUS'].count()  
-    d1 = df_data.reset_index()
+    d1 = df_interno.reset_index()
     d1 = d1[d1['DATA DO ÓBITO'] <= data]
     obitos = d1.groupby('MUNICÍPIO RESIDÊNCIA AJUSTADO')['DATA DO ÓBITO'].count()
     return casos, obitos
