@@ -1,2 +1,8 @@
 Processamento: 08-14-2020 13:50:01
 ./script: line 3: /home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py: Permission denied
+[master f42fe12] update 08-14-2020 13:50:01
+ 3 files changed, 4 insertions(+), 136213 deletions(-)
+ rewrite agregate.log (100%)
+ delete mode 100644 microdados2020-08-13.csv
+To github.com:maboselli/Microdados.git
+   946752a..f42fe12  master -> master
