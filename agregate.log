@@ -1,11 +1,2 @@
-Processamento: 08-13-2020 13:50:02
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/08/Microdados-2020.08.13.csv
-Data: 2020-08-13
-Lido
-Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-08-13.csv
-Fim do processo
-[master cac3118] update 08-13-2020 13:50:02
- 2 files changed, 83 insertions(+), 4 deletions(-)
- create mode 100644 Microdados_analisados_MS_proc_2020-08-13.csv
-To github.com:maboselli/Microdados.git
-   1bf70cc..cac3118  master -> master
+Processamento: 08-14-2020 13:50:01
+./script: line 3: /home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py: Permission denied
