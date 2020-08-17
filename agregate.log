@@ -1,8 +1,6 @@
-Processamento: 08-14-2020 13:50:01
-./script: line 3: /home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py: Permission denied
-[master f42fe12] update 08-14-2020 13:50:01
- 3 files changed, 4 insertions(+), 136213 deletions(-)
- rewrite agregate.log (100%)
- delete mode 100644 microdados2020-08-13.csv
-To github.com:maboselli/Microdados.git
-   946752a..f42fe12  master -> master
+Processamento: 08-17-2020 13:50:02
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/08/Microdados-2020.08.17.csv
+Data: 2020-08-17
+Lido
+Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-08-17.csv
+Fim do processo
