@@ -1,6 +1,6 @@
-Processamento: 09-29-2020 13:50:01
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/09/Microdados-2020.09.29.csv
-Data: 2020-09-29
+Processamento: 09-30-2020 13:50:01
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/09/Microdados-2020.09.30.csv
+Data: 2020-09-30
 Traceback (most recent call last):
   File "/home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py", line 31, in <module>
     df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
