@@ -1,19 +1,6 @@
-Processamento: 10-06-2020 13:50:01
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/10/Microdados-2020.10.06.csv
-Data: 2020-10-06
-Traceback (most recent call last):
-  File "/home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py", line 31, in <module>
-    df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 676, in parser_f
-    return _read(filepath_or_buffer, kwds)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 448, in _read
-    parser = TextFileReader(fp_or_buf, **kwds)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 880, in __init__
-    self._make_engine(self.engine)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1114, in _make_engine
-    self._engine = CParserWrapper(self.f, **self.options)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1937, in __init__
-    _validate_usecols_names(usecols, self.orig_names)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1233, in _validate_usecols_names
-    "Usecols do not match columns, "
-ValueError: Usecols do not match columns, columns expected but not found: ['DATA DO ÓBITO']
+Processamento: 10-07-2020 13:50:01
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/10/Microdados-2020.10.07.csv
+Data: 2020-10-07
+Lido
+Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-10-07.csv
+Fim do processo
