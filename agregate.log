@@ -1,52 +1,6 @@
-Processamento: 10-26-2020 13:50:01
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/10/Microdados-2020.10.26.csv
-Data: 2020-10-26
-Traceback (most recent call last):
-  File "/usr/lib64/python3.6/urllib/request.py", line 1318, in do_open
-    encode_chunked=req.has_header('Transfer-encoding'))
-  File "/usr/lib64/python3.6/http/client.py", line 1262, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/usr/lib64/python3.6/http/client.py", line 1308, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/usr/lib64/python3.6/http/client.py", line 1257, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/usr/lib64/python3.6/http/client.py", line 1036, in _send_output
-    self.send(msg)
-  File "/usr/lib64/python3.6/http/client.py", line 974, in send
-    self.connect()
-  File "/usr/lib64/python3.6/http/client.py", line 1415, in connect
-    super().connect()
-  File "/usr/lib64/python3.6/http/client.py", line 946, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/usr/lib64/python3.6/socket.py", line 704, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib64/python3.6/socket.py", line 745, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py", line 31, in <module>
-    df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 676, in parser_f
-    return _read(filepath_or_buffer, kwds)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/parsers.py", line 431, in _read
-    filepath_or_buffer, encoding, compression
-  File "/usr/lib64/python3.6/site-packages/pandas/io/common.py", line 172, in get_filepath_or_buffer
-    req = urlopen(filepath_or_buffer)
-  File "/usr/lib64/python3.6/site-packages/pandas/io/common.py", line 141, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File "/usr/lib64/python3.6/urllib/request.py", line 223, in urlopen
-    return opener.open(url, data, timeout)
-  File "/usr/lib64/python3.6/urllib/request.py", line 526, in open
-    response = self._open(req, data)
-  File "/usr/lib64/python3.6/urllib/request.py", line 544, in _open
-    '_open', req)
-  File "/usr/lib64/python3.6/urllib/request.py", line 504, in _call_chain
-    result = func(*args)
-  File "/usr/lib64/python3.6/urllib/request.py", line 1361, in https_open
-    context=self._context, check_hostname=self._check_hostname)
-  File "/usr/lib64/python3.6/urllib/request.py", line 1320, in do_open
-    raise URLError(err)
-urllib.error.URLError: <urlopen error [Errno -2] Name or service not known>
+Processamento: 10-27-2020 13:50:01
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2020/10/Microdados-2020.10.27.csv
+Data: 2020-10-27
+Lido
+Dados salvos no arquivo: Microdados_analisados_MS_proc_2020-10-27.csv
+Fim do processo
