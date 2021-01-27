@@ -1,6 +1,6 @@
-Processamento: 01-26-2021 13:50:01
-Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2021/01/Microdados-2021.01.26.csv
-Data: 2021-01-26
+Processamento: 01-27-2021 13:50:01
+Dados coletados em: https://www.vs.saude.ms.gov.br/wp-content/uploads/2021/01/Microdados-2021.01.27.csv
+Data: 2021-01-27
 Traceback (most recent call last):
   File "/home/boselli/Marco/prog/epidemia/microdados_ms/dados_git/agregate_gh.py", line 31, in <module>
     df = pd.read_csv(csv_url, sep =';', usecols=cols_list)
